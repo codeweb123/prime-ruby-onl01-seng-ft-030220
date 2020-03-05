@@ -1,8 +1,12 @@
-  def prime?(n)
-    if n <= 1
+def prime?(value)
+  if value <= 1 || value == 0 || value == 1
+    return false
+  elsif
+    (2..value - 1).each do |i|
+      if value % i == 0
       return false
-    elsif n <= 3
-      return true
-    else (2..n/2).none? do |x|
-      n % x == 0
     end
+  end
+end
+true
+end
